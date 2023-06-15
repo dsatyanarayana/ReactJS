@@ -1,0 +1,32 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "This is ReactJS files",
+  "scripts": {
+    "start": "parcel index.html",
+    "built": "parcel built index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsatyanarayana/ReactJS.git"
+  },
+  "keywords": [
+    "React",
+    "Javascript"
+  ],
+  "author": "Satyanarayana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsatyanarayana/ReactJS/issues"
+  },
+  "homepage": "https://github.com/dsatyanarayana/ReactJS#readme",
+  "devDependencies": {
+    "parcel": "^2.9.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
