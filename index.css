@@ -1,3 +1,39 @@
-#head{
-    color:green;
+.res-header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.res-header-navlist{
+    margin: 0px 30px;
+}
+.res-header-navlist ul{
+    display: flex;
+}
+
+.res-header-navlist ul li{
+    font-size: 25px;
+    list-style-type: none;
+    padding:20px;
+}
+
+.res-header-logo > img{
+    width:100px;
+    height:100px;
+}
+.res-card{
+    background-color: #f0f0f0;
+    margin: 5px;
+    width: 250px;
+}
+
+.body-res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.res-card:hover{
+    border:1px solid burlywood;
+}
+.res-img img{
+    padding: 5px;
+    width: 240px;
 }
