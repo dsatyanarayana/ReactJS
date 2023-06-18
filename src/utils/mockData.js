@@ -1,17 +1,9 @@
-export const restaurantList = {
-	"data": {
-		"title": "SEE ALL",
-		"totalOpenRestaurants": 158,
-		"cards": [{
+export const restaurantList = [{
 				"type": "restaurant",
 				"data": {
 					"type": "F",
 					"id": "691297",
 					"name": "Reeves Royale Restaurant",
-					"uuid": "93910471-8860-45d6-8b6f-f5ae2ac16777",
-					"city": "87",
-					"area": "Bhanugudi",
-					"totalRatingsString": "100+ ratings",
 					"cloudinaryImageId": "dc5264445465769eac73535cb6006a1a",
 					"cuisines": [
 						"Biryani",
@@ -115,10 +107,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "293680",
 					"name": "Hyggee Multicuisine Restaurant",
-					"uuid": "b01eaf2b-4b7d-4c84-b7bf-10182192c9a2",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "5000+ ratings",
 					"cloudinaryImageId": "43d42aeba1a60b4203030e19cfe47eae",
 					"cuisines": [
 						"Biryani",
@@ -219,10 +207,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "613255",
 					"name": "Vinayaka East Foods",
-					"uuid": "151da353-f90b-4d77-9e7b-f1790a2c8d17",
-					"city": "87",
-					"area": "Bhanugadi",
-					"totalRatingsString": "500+ ratings",
 					"cloudinaryImageId": "lognqfmrezkq2vsiutd6",
 					"cuisines": [
 						"North Indian",
@@ -323,10 +307,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "384916",
 					"name": "Winni Cakes & More",
-					"uuid": "57a0b143-90d8-4f3f-88bd-97f2ee2e0565",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "500+ ratings",
 					"cloudinaryImageId": "ur6jedmk11kipiqokkce",
 					"cuisines": [
 						"Bakery",
@@ -429,10 +409,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "613182",
 					"name": "Rajugari Vindhubojanam",
-					"uuid": "757fb11b-de7b-4064-84d3-857dc2b661d8",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "500+ ratings",
 					"cloudinaryImageId": "a10684129aaa0e41cff2c988a1d8d553",
 					"cuisines": [
 						"Biryani",
@@ -534,10 +510,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "351227",
 					"name": "Kadai  Biryani's",
-					"uuid": "d0026c80-9131-43ef-b80f-e2325e45a76c",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "1000+ ratings",
 					"cloudinaryImageId": "zank8ft8kz8xg0d1spyr",
 					"cuisines": [
 						"Biryani",
@@ -640,10 +612,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "102281",
 					"name": "Barkas Arabian Kitchens",
-					"uuid": "596ab1eb-942d-4009-9035-e5d6d0cdeadf",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "5000+ ratings",
 					"cloudinaryImageId": "tkojaksqfbgvgoccvcyf",
 					"cuisines": [
 						"Arabian",
@@ -746,10 +714,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "675903",
 					"name": "Kshatriya Foods",
-					"uuid": "f5a97925-621c-4e7b-85fc-a9e406bd6e75",
-					"city": "87",
-					"area": "Bhanugudi",
-					"totalRatingsString": "500+ ratings",
 					"cloudinaryImageId": "8018c14b50ba15c110a31a122492d890",
 					"cuisines": [
 						"Indian",
@@ -850,10 +814,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "564408",
 					"name": "Prakash Tiffins & Veg Meals",
-					"uuid": "2991666a-2a3d-4a59-853f-ce049d7177f9",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "500+ ratings",
 					"cloudinaryImageId": "lhhj44yceu147tz6naw8",
 					"cuisines": [
 						"South Indian",
@@ -953,10 +913,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "400786",
 					"name": "Maha's Kitchen",
-					"uuid": "9d299850-ffaf-4e1b-8665-222aae9c62b2",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "5000+ ratings",
 					"cloudinaryImageId": "7814a0e0b947658eb3065fff03f5a02c",
 					"cuisines": [
 						"Biryani",
@@ -1059,10 +1015,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "103033",
 					"name": "Food Park Family Restaurant",
-					"uuid": "4d03f128-acb2-4d5f-a24c-1cfe24c1d493",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "10000+ ratings",
 					"cloudinaryImageId": "wuxfcmpwh9m1mfehl94x",
 					"cuisines": [
 						"Indian",
@@ -1163,10 +1115,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "93918",
 					"name": "E 2 Restaurant",
-					"uuid": "ccbb6c2b-ca4f-4eb8-8b78-7cae8f0b39cb",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "5000+ ratings",
 					"cloudinaryImageId": "pg8hjpcmv0zzzkgaqhjh",
 					"cuisines": [
 						"Indian",
@@ -1261,10 +1209,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "93562",
 					"name": "Lassi Shop",
-					"uuid": "c1fdde81-45ab-46ce-ba27-e5779417443f",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "10000+ ratings",
 					"cloudinaryImageId": "samlb0qxwad5umffbhyr",
 					"cuisines": [
 						"Beverages"
@@ -1360,10 +1304,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "92986",
 					"name": "Meesala Raju Gari Hotel Ashoka Inn",
-					"uuid": "89ae66bb-b066-4e19-b107-0197740a188f",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "10000+ ratings",
 					"cloudinaryImageId": "fce5e0b123533c2139cbccdab6b5e54a",
 					"cuisines": [
 						"Biryani",
@@ -1464,10 +1404,6 @@ export const restaurantList = {
 					"type": "F",
 					"id": "500032",
 					"name": "Makers of Milkshakes",
-					"uuid": "38789816-9a24-4d79-a4c8-b599742f1abe",
-					"city": "87",
-					"area": "Kakinada",
-					"totalRatingsString": "100+ ratings",
 					"cloudinaryImageId": "y9hhvcu8ypkecj1vf0wj",
 					"cuisines": [
 						"Beverages",
@@ -1561,6 +1497,4 @@ export const restaurantList = {
 					"new": false
 				}
 			}
-		]
-	}
-};
+		];
