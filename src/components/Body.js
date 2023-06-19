@@ -1,5 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
-import { restaurantList } from "../utils/mockData";
+//  import { restaurantList } from "../utils/mockData";
+import Shimmer from "./Shimmer";
 import {useEffect, useState} from "react";
 
 const topRatedRestaurants = ()=>{
@@ -11,14 +12,17 @@ const Body = ()=>{
     useEffect(()=>{
         fetchRestaurants();
     },[])
-    const [listOfRestaurants,setrestaurantList] = useState(restaurantList);
+    const [listOfRestaurants,setrestaurantList] = useState([]);
         const fetchRestaurants = async()=>{
-            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=16.9890648&lng=82.2474648&page_type=DESKTOP_WEB_LISTING");
+            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         //Optional chaining
         setrestaurantList(json?.data?.cards[2]?.data?.data?.cards);
     }
     
+    if(listOfRestaurants.length===0){
+        return <Shimmer/>
+    }
 
     return (
         <div className="body">
