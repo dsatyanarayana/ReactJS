@@ -45,7 +45,7 @@ const Body = ()=>{
             </div>
             <div className="body-res-container">
 			{filterRestaurants.map((restaurant)=>(
-                <RestaurantCard key={restaurant.id} RestList={restaurant}/>
+                <RestaurantCard key={restaurant.data.id} RestList={restaurant}/>
 			))}
             </div>
         </div>
