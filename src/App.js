@@ -2,31 +2,35 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import AppLayout from "./components/AppLayout";
 import AboutUs from "./components/AboutUs";
-import ContactUs from './components/ContactUs';
-import Error from './components/Error';
+import ContactUs from "./components/ContactUs";
+import Body from "./components/Body";
+import Error from "./components/Error";
 
-import {createBrowserRouter,RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const appRouter = createBrowserRouter([
-        {
-            path:"/",
-            element:<AppLayout/>,
-            errorElement:<Error/>
-        },
-        {
-            path:"/about",
-            element:<AboutUs/>
-        },{
-            path:"/contact",
-            element:<ContactUs/>
-        }
-    ]);
-
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <AboutUs />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
+      },
+    ],
+    errorElement: <Error />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={appRouter}/>);
-
-
-
+root.render(<RouterProvider router={appRouter} />);
 
 /* 
 const heading = <h1>I'm Heading H1 Tag React Element</h1>
@@ -58,9 +62,6 @@ const Heading4 = ()=>{
 
  */
 
-
-
-
 /* //React Element
 
 
@@ -81,26 +82,6 @@ const heading = <h1>Hello with JSX 2</h1>
 
 root.render(<HeadingComponent2/>);
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*<div class="parent">
     <div class="child">

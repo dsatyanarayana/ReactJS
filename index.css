@@ -60,3 +60,9 @@
 .loginBtn{
     padding:5px 20px;
 }
+
+.body-search{
+    background-color: #f0f0f2;
+    padding: 20px 20px;
+    justify-content: space-between;
+}
