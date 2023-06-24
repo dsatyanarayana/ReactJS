@@ -66,3 +66,32 @@
     padding: 20px 20px;
     justify-content: space-between;
 }
+
+.menu-container{
+    background-color: #f0f0f0;
+    max-width: 800px;
+    margin:20px auto 0;
+}
+.menu-res-info{
+    margin: 20px 20px;
+    padding:30px 5px;
+    border-bottom: 1px dashed #d3d3d3;
+}
+.menu-res-offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-res-offer{
+    margin: 20px 20px;
+    padding: 5px 5px;
+    width: 200px;
+    border: 1px solid black;
+}
+.res-menu{
+    margin: 20px 20px;
+    padding: 5px 5px;
+}
+.res-item{
+    border-bottom:1px solid;
+    padding: 10px;
+}
