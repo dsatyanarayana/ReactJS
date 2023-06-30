@@ -1,10 +1,21 @@
 import React from "react";
 class ContactUsClass extends React.Component{
     constructor(props){
-        super(props)
-        console.log(props);
+        console.log("CONSTRUCTOR "+props.name);
+        super(props);
+        this.state = {
+            name:"satya"
+        }
+    }
+    componentDidMount(){
+        console.log("componentDidMount "+this.props.name);
+        //console.log("STATE IS "+this.state.name);
     }
     render(){
+        console.log("RENDER "+this.props.name);
+        this.setState = ({
+            name:"Ramesh"
+        });
         const {name,address,mobile} = this.props;
         return(
             <div>

@@ -1,15 +1,23 @@
 import ContactUsClass from "./ContactUsClass";
-
-const ContactUs = ()=>{
-    return(
-        <div>
-            <h1>Contact us</h1>
-            <h3>Sriram</h3>
-            <h2>Bhanugudi Junc,Kakinada-533004</h2>
-            <h2>9999933333.</h2>
-
-            <ContactUsClass name={"Satyanarayana"} address={"California, US-343433"} mobile={"93482343283"}/>
-        </div>
-    )
+import React from "react";
+class ContactUs extends React.Component{
+    constructor(props){
+        super(props);
+        console.log("Parent Constructer");
+    }
+    componentDidMount(){
+        console.log("Parent componentDidMount");
+    }
+    render(){
+        return (
+            <div>
+                <ContactUsClass name={"First"} address={"Divili"} mobile={"47890"}/>
+                <ContactUsClass name={"Second"} address={"Kakinada"} mobile={"9491224433"}/>
+                <ContactUsClass name={"Three"} address={"Kakinada"} mobile={"9491224433"}/>
+            </div>
+        )
+    }
 }
+
+
 export default ContactUs;
