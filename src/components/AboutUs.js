@@ -1,4 +1,13 @@
+import { useEffect } from "react";
+
 const AboutUs = ()=>{
+    useEffect(()=>{
+        console.log("About US");
+        return()=>{
+            console.log("WilUnmount About US :)");
+        }
+    
+    },[])
     return (
         <div>
             <h1>About Us</h1>

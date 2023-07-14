@@ -16,13 +16,13 @@ class ContactUsClass extends React.Component{
         this.setState = ({
             name:"Ramesh"
         });
-        const {name,address,mobile} = this.props;
+        const {name,address,img} = this.props;
         return(
             <div>
                 <h1>Contact us</h1>
+                <img src={img}/>
                 <h3>{name}</h3>
                 <h2>{address}</h2>
-                <h2>{mobile}.</h2>                               
             </div>
         )
     }
