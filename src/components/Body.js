@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard,{RestaurantCardPromoted} from "./RestaurantCard";
 //  import { restaurantList } from "../utils/mockData";
 import Shimmer from "./Shimmer";
 import { useEffect, useState } from "react";
@@ -10,6 +10,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   const [listOfRestaurants, setRestaurantList] = useState([]);
   const [filterRestaurants, setFilterRestaurants] = useState([]);
+  const RestaurantCardPromo = RestaurantCardPromoted(RestaurantCard);
   const fetchRestaurants = async () => {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=16.9890648&lng=82.2474648&page_type=DESKTOP_WEB_LISTING"
@@ -66,7 +67,17 @@ const Body = () => {
       </div>
       <div className="flex flex-wrap">
         {filterRestaurants.map((restaurant,i) => (
-          <Link to={"/restaurent-menu/"+restaurant.data.id} key={restaurant.data.id}><RestaurantCard  RestList={restaurant} /></Link>
+          <Link to={"/restaurent-menu/"+restaurant.data.id} key={restaurant.data.id}>
+
+            {(restaurant.data.promoted==false)?(
+            <RestaurantCard  RestList={restaurant} />
+            )
+            :(
+            <RestaurantCardPromo  RestList={restaurant} />
+            )
+            }
+            
+            </Link>
         ))}
       </div>
     </div>
