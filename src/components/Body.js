@@ -41,7 +41,7 @@ const Body = () => {
               res.data.name.toLowerCase().includes(searchText.toLowerCase())
             );
             setFilterRestaurants(filterRestaurants);
-            console.log(searchText);
+            //console.log(searchText);
           }}
         >
           Search
